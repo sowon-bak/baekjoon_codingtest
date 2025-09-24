@@ -1,15 +1,11 @@
 n = int(input())
 for _ in range(n):
     w = input()
-    g = w.count('g')
-    G = w.count('G')
-    b = w.count('b')
-    B = w.count('B')
-    gg = g + G
-    bb = b + B
-    if gg > bb :
+    g = w.count('g') + w.count('G')
+    b = w.count('b') + w.count('B')
+    if g > b :
         print(f'{w} is GOOD')
-    elif gg < bb :
+    elif g < b :
         print(f'{w} is A BADDY')
     else :
         print(f'{w} is NEUTRAL')
